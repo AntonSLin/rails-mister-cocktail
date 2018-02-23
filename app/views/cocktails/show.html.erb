@@ -11,6 +11,7 @@
   <%= link_to 'remove dose', dose_path(dose), method: :delete %>
   <% end %>
 </p>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
 <p><%= link_to 'Back to List', cocktails_path %></p>
 <p><%= link_to 'Add dose', new_cocktail_dose_path(@cocktail) %></p>
